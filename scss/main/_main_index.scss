@@ -1,0 +1,70 @@
+.main{
+    grid-area: main;
+
+    // .colorBoton{
+    //     background-color: $naranja;
+    //     transition: 0.3s all ease;
+
+    //     &:hover{
+    //         background-color: $azul;
+    //         color: $naranja;
+    //     }
+    // }
+    
+    //Aplicacion de Extend
+    .boton_rx7{
+        @extend %boton;
+        background-color: $naranja;
+        color: $azul;
+        &:hover{
+            background-color: $azul;
+            color: $naranja;
+        }
+    }
+
+    .boton_wrx{
+        @extend %boton;
+        background-color: $azul;
+        color: $naranja;
+        &:hover{
+            background-color: $naranja;
+            color: $azul;
+        }
+    }
+
+    .boton_lanEvo{
+        @extend %boton;
+        background-color: cadetblue;
+        color: crimson;
+        width: 65%;
+        &:hover{
+            background-color: crimson;
+            color: cadetblue;
+        }
+    }
+
+    .disable{
+        display: none;
+        @media(max-width:768px){
+            display: inline-block;
+        }
+        @media(max-width:425px){
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media(max-width:768px){
+        .margen{
+            margin-bottom: 35px;
+        }
+    }
+    @media(max-width:425px){
+        .subaru{
+            margin-bottom: 35px;
+        }
+        .lancer{
+            margin-bottom: 35px;
+        }
+    }
+}

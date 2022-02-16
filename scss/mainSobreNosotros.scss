@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1f2a44;
+}
+
+//Variables
+@import './utilidades/colores';
+@import './variables/extend';
+
+//Importaciones
+@import './secciones/sobreNosotros';
+@import './grid/gridSobreNosotros';
+@import './header-footer/headerSobreNosotros';
+@import './headerSecundario/headerSecSobreNosotros';
+@import './main/mainSobreNosotros';
+@import './header-footer/footerSobreNosotros';

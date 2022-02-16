@@ -1,0 +1,253 @@
+.main{
+    grid-area: main;
+    padding-top: 20px;
+    .gridMain{
+        display: grid;
+        grid-template-columns: 20% auto auto 20%;
+        grid-template-rows: 600px 650px 600px ;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-areas: 
+        ". vision vision ."
+        ". perfil museo ."
+        ". distribucion distribucion ."
+        ;
+
+        .vision{
+            grid-area: vision;
+            display: flex;
+            flex-direction: column;
+
+            .imgVision{
+                height: 55%;
+                background-image: url(../images/vision.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .textoVision{
+                background-color: #cecece;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                p{
+                    color: $azul;
+                }
+
+                .tituloMain{
+                    font-size: 2.5rem;
+                    font-weight: bold;
+
+                    @media(max-width:425px){
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .subTituloMain{
+                    font-size: 1.15rem;
+                    text-align: center;
+
+                    @media(max-width:425px){
+                        font-size: 1rem;
+                    }
+                }
+
+                button{
+                    @extend %waveBoton;
+                }
+
+                @media(max-width:425px){
+                    height: 45%;
+                }
+            }
+        }
+
+        .perfil{
+            grid-area: perfil;
+            
+            .imgPerfil{
+                height: 100%;
+                background-image: url(../images/museo.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .textoPerfil{
+                background-color: #cecece;
+                z-index: 1;
+                position: relative;
+                top: -60%;
+                left: 0;
+                width: 100%;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 135px;
+
+                p{
+                    color: $azul;
+                }
+
+                .tituloMain{
+                    font-size: 1.75rem;
+                    font-weight: bold;
+
+                    @media(max-width:425px){
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .subTituloMain{
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+                button{
+                    @extend %waveBoton;
+                }
+
+                @media(max-width:425px){
+                    height: 45%;
+                    top: -45%;
+                }
+            }
+            
+        }
+
+        .museo{
+            grid-area: museo;
+            
+            .imgMuseo{
+                height: 100%;
+                background-image: url(../images/museo.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .textoMuseo{
+                background-color: #cecece;
+                z-index: 1;
+                position: relative;
+                top: -60%;
+                left: 0;
+                width: 100%;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 135px;
+
+                p{
+                    color: $azul;
+                }
+
+                .tituloMain{
+                    font-size: 1.75rem;
+                    font-weight: bold;
+
+                    @media(max-width:425px){
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .subTituloMain{
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+                button{
+                    @extend %waveBoton;
+                }
+
+                @media(max-width:425px){
+                    height: 45%;
+                    top: -45%;
+                }
+            }
+            
+        }
+
+        .distribucion{
+            grid-area: distribucion;
+            
+            .imgDistribucion{
+                height: 100%;
+                background-image: url(../images/distributor.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            .textoDistribucion{
+                background-color: #cecece;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                p{
+                    color: $azul;
+                }
+
+                .tituloMain{
+                    font-size: 2.5rem;
+                    font-weight: bold;
+
+                    @media(max-width:425px){
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .subTituloMain{
+                    font-size: 1.15rem;
+                    text-align: center;
+                    @media(max-width:425px){
+                        font-size: 1rem;
+                    }
+                }
+
+                button{
+                    @extend %waveBoton;
+                }
+
+                @media(max-width:425px){
+                    height: 45%;
+                }
+            }
+
+        }
+
+        @media(max-width:1440px){
+            grid-template-columns: 10% auto auto 10%;
+        }
+
+        @media(max-width:1024px){
+            grid-template-columns: auto auto ;
+            grid-template-rows: 600px 650px 500px ;
+            grid-template-areas: 
+            "vision vision"
+            "perfil museo"
+            "distribucion distribucion"
+            ;
+        }
+
+
+        @media(max-width:425px){
+            grid-template-columns: auto;
+            grid-template-rows: 340px 425px 425px 380px ;
+            grid-row-gap: 20px;
+            grid-template-areas: 
+            "vision"
+            "perfil"
+            "museo"
+            "distribucion"
+        ;
+        }
+    }
+}

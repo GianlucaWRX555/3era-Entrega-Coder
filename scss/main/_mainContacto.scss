@@ -1,0 +1,35 @@
+.main{
+    grid-area: main;
+
+    .contenedorFormulario{
+        background-color: $azul;
+
+        .colorLetra{
+            color: $naranja;
+
+            .colorBoton{
+                background-color: $naranja;
+                transition: all ease 0.3s;
+
+                &:hover{
+                    background-color: $azul;
+                    color: $naranja;
+                }
+            }
+        }
+
+        @media(max-width:425px){
+            flex-direction: column;
+        }
+    }
+
+    .barraNaranja{
+        background-color: $naranja;
+
+        .fs-5 {
+            @media(max-width:768px){
+                font-size: 0.8rem!important;
+            }
+        }
+    }
+}
