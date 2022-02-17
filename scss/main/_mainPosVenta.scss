@@ -1,0 +1,19 @@
+.main{
+    grid-area: main;
+    padding: 1.5rem 0;
+
+    .revision{
+        display: flex;
+        justify-content: space-evenly;
+
+        .revision2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p{
+                font-size: 3rem;
+            }
+        }
+    }
+}
