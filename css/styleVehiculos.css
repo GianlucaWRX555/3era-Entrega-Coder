@@ -71,6 +71,9 @@ body {
         @media (max-width: 768px) {
           .header .headerPrincipal ul li a {
             font-size: 16px; } }
+        @media (max-width: 768px) {
+          .header .headerPrincipal ul li {
+            padding: 0 5px; } }
       @media (max-width: 425px) {
         .header .headerPrincipal ul {
           display: none !important; } }
@@ -219,6 +222,18 @@ body {
         font-size: 3.5rem;
         font-weight: bold;
         color: #fc4e03; }
+        @media (max-width: 768px) {
+          .main .gridMain .textoMain p {
+            font-size: 3rem; } }
+        @media (max-width: 425px) {
+          .main .gridMain .textoMain p {
+            font-size: 1.9rem; } }
+        @media (max-width: 375px) {
+          .main .gridMain .textoMain p {
+            font-size: 1.65rem; } }
+        @media (max-width: 320px) {
+          .main .gridMain .textoMain p {
+            font-size: 1.4rem; } }
     .main .gridMain .c1 {
       grid-area: c1; }
       .main .gridMain .c1 .tituloCard {
@@ -355,6 +370,18 @@ body {
         background: transparent;
         border: 1px solid #fc4e03;
         cursor: pointer; }
+    @media (max-width: 768px) {
+      .main .gridMain {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+        grid-template-rows: 150px 460px 460px 460px 460px;
+        grid-template-areas: "textoMain textoMain textoMain textoMain" "c1 c1 c2 c2" "c3 c3 c4 c4" "c5 c5 c6 c6" "c7 c7 c8 c8"; } }
+    @media (max-width: 768px) {
+      .main .gridMain {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 460px 460px 460px 460px 460px 460px 460px 460px;
+        grid-template-areas: "textoMain" "c1" "c2" "c3" "c4" "c5" "c6" "c7" "c8"; } }
 
 .footer {
   grid-area: footer;
